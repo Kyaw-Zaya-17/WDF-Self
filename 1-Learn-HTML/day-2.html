@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <marquee behavior="" direction="right">This Is Heading</marquee>--> 
+    <h3>Unoder List</h3>
+    <ul>
+        <li>Apple</li>
+        <li>Organge</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Greap</li>
+    </ul>
+    <h3>Order List</h3>
+    <ol>
+        <li>Health</li>
+        <li>Gold</li>
+        <li>Diamon</li>
+        <li>Wealth</li>
+        <li>Women</li>
+    </ol>
+    <h3>A Description List</h3>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+<hr>
+
+<h3>Table List</h3>
+<table>
+ <thead>
+    <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Job</th>
+    </tr>
+ </thead>
+ <tbody>
+    <tr>
+        <td>1.</td>
+        <td>Mr. Kyaw Zayar Tun</td>
+        <td>Developer</td>
+        <td>09409915504</td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td>Ms. Su Lay Khin</td>
+        <td>Enginer</td>
+        <td>09883811143</td>
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td>Ms. Jennie</td>
+        <td rowspan="2">Developer</td>
+        <td>0943834123</td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>Mr. Kyaw Zayar Tun</td>
+        <td>09409915504</td>
+    </tr>
+    <tr>
+        <td>5.</td>
+        <td>Ms. Su Lay Khin</td>
+        <td>Enginer</td>
+        <td>09883811143</td>
+    </tr>
+    <tr>
+        <td>.</td>
+        <td>Ms. Jennie</td>
+        <td>Developer</td>
+        <td>0943834123</td>
+    </tr>
+    <tr>
+        <td colspan="3">Total</td>
+        <td>6 Staffs</td>
+    </tr>
+ </tbody>
+</table>
+<hr>
+ <h3>Forms</h3>
+    <fieldset>
+        <legend>Register Form</legend>
+        <form action="https://mms-it.com" method="get" enctype="multipart/form-data">
+            <!-- form က action attibuteက ကိုရေးလိုက်တဲ့ အချက်အလက်တွေကို ပို့ပေးမယ့် ‌နေရာနဲ့ချိတ်တာ။ methodမှာ getနဲ့ postဆိုပြီးရှိ။ getဆိုရင် serachဘားမှာ ပက်စဝေါ့တွေပေါ်တယ်။ postကျတော့ မပေါ်ဘူး သူကနောက်ကွယ် ကနေ dataေတွကို ပို့လို့-->
+            <!-- input tags -->
+            <label for="your_name">Your Name : </label>
+            <input type="text" id="your_name" name="your_name" required autofocus value="Kyaw Zayar Tun 008">
+
+            <br>
+            <!-- placeholder ကဖောင်းပေါ်မှာ အောိတိုပြထားတယ် စာရေးမယ်ဆိုရင်ပျောက်သွားတယ် (နမူနာ)။ valueက ဖောင်းပေါ်မှာ အော်တိုပြပေမဲ့ ရေးရင်ဖျက်ဖို့လိုတယ်။ autofocusကကျတော့ ပေ့ချ်စrunတာနဲ့ ကာချာချပေးတာမျိုး -->
+            <label for="your_email">Your Email : </label>
+            <input type="email" id="your_email" name="your_email" required placeholder="@gmail.com">
+
+            <br>
+            <!-- inputမှာ id ထည့်ရင်labelက for မှာလည်း idမှာထည့်ထားတဲ့ တန်ဖိုးကိုထည့်ခြင်းအားဖြင့် ချိတ်ဆက်ပေးတယ် ဥပမာ ကာချာချပေးတာ -->
+            <label for="password">Password : </label>
+            <input type="password" id="password" name="password" required>
+
+            <br>
+            <hr>
+            <label for="">Gender : </label>
+
+
+            <input type="radio" id="male" name="gender" value="male_gender">
+            <label for="male">Male</label>
+
+
+            <input type="radio" id="female"  name="gender" value="female_gender">
+            <label for="female">Female</label>
+            <hr>
+            <label for="">Skill : </label>
+
+            <input type="checkbox" id="html"  name="skill" value="html">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css"  name="skill" value="css">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="js"  name="skill" value="js">
+            <label for="js">JS</label>
+
+            <input type="checkbox" id="php"  name="skill" value="php">
+            <label for="php">PHP</label>
+
+            <input type="checkbox" id="sql"  name="skill" value="sql">
+            <label for="sql">HTML</label>
+            <hr>
+
+            <label for="nat">Nationality</label>
+
+            <select name="nationality" id="nat">
+            <option value="mm">Myanmar</option>
+            <option value="jp">Japan</option>
+            <option value="kr">Korean</option>
+            <option value="sg">Singapore</option>
+            <option value="us">United State</option>
+            </select>
+            <hr>
+            <label for="add">Address</label>
+            <br>
+            <textarea name="address" id="add" cols="30" rows="10" required></textarea>
+            <hr>
+            <label for="">Photo & Video</label>
+            <input type="file" accept="image/jpeg,video/mp4" multiple>
+            <!-- fileမှာ accept မပါရင် ဖိုင်ပေါင်းစုံကိုလျှောက်ပြတယ်။ acceptမှာ လိုချင်းတဲ့ ဖိုင်အမျိုးအစားကိုတစ်ခု သို့ တစ်ခုထက်ပိုသတ်မှတ်ခြင်းဖြင့် လိုချင်းတဲ့ဖိုင်အမျိုးအစားကိုဘဲ စက်မှာဖော်ပြပေးတယ်
+            multiple attribute ကိုသုံးမှဘဲ ဖိုင်တွေကို အများကြီးထည့်လို့ရမယ် -->
+            <!-- ပုံထည့်တဲ့နေရာမှာ userရဲ့ ကင်မရာကနေရိုက်ခိုင်းစေချင်းရင် capture attributeကိုသုံးလို့ရတယ် ကွန်ပျူတာမှာတော့မရဘူး ဖုန်းမှာဘဲရမယ်။ ထည့်နည်းကိုအင်တာနက်မှာ ရှာလို့ရတယ် -->
+            <br>
+            <label for="lv">Lavel</label>
+            <input type="range" id="lv" min="0" max="100" step="20" value="30">
+                <!-- rangနဲ့ရေးထားတဲ့ လယ်ဗယ်မှာဆိုရင် valueက ဖွင့်လိုက်တာနဲ့ လယ်ဗယ်ဘယ်‌လောက်ဆိုပြီး ကာချာချတာနဲ့တူတယ်။ 
+                stepကျတော့ ဖုန်းမှာအသံတိုးချဲ့လုပ်တဲ့အခါ တစ်ခါနှိပ်ရင် ၁၀တိုးသလိုမျိုးတိုးအောင်လုပ်တာ-->
+            <hr>
+
+            <input type="submit">
+            <!-- <input type="button" value="click"> -->
+            <!-- <button>click this</button> -->
+            <!-- <button type="button">Click</button> -->
+            <!-- form ထဲမှာ button နဲ့ submit ရေးရင်း submitဘဲဖြစ်သွားတယ်။  buttonဖြစ်ဖို့ဆိုရင် typeမှာ buttonလို့ရေးမှရမယ်။ ဒါတွေအားလုံးက formဆိုတဲ့ elementအတွင်းရေးမှ ဖြစ်တာ။ မဟုတ်ရင်မဖြစ်ဘူး။ submitကအချက်အလက်ကို ဆာဗာထဲသယ်သွားတာ။ buttonက ခလုတ်တစ်ခုဘဲ -->
+        </form>
+    </fieldset>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap');
+
+/* select all element */
+* {
+    font-family: 'Rajdhani', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: rgb(212, 209, 209);
+}
+
+.list {
+    list-style-type: none;
+    /* background-color: rgb(189, 184, 184); */
+    border: 2px solid var(--dark);
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(80, 77, 77, 0.514);
+}
+
+.list-item {
+    /* background-color: skyblue; */
+    border-bottom: 1px solid var(--dark);
+    width: 100%;
+    /* margin-bottom: 5px; */
+    padding: 10px;
+}
+
+.list-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: top;
+    margin-right: 10px;
+    border: 3px solid rgb(168, 165, 165);
+}
+
+.list-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.list-item p {
+    font-weight: bold;
+    display: inline-block;
+}
+
+.list-item .position {
+    color: rgb(75, 78, 78);
+    font-size: 12px;
+}
+
+
+
+.nav {
+
+    /* border: 2px solid black; */
+    list-style-type: none;
+    background-color: black;
+    
+}
+
+.nav-item {
+
+    /* border: 2px solid black; */
+    display: inline-block;
+}
+
+.nav-link {
+
+    /* border: 2px solid black; */
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 15px 20px;
+
+}
+
+.nav-link:hover {
+    background-color: rgb(104, 101, 101);
+}
+
+.nav-link.active  {
+    background-color: orange;
+}
+
+.nav-link.active:hover {
+
+    background-color: orange;
+
+}

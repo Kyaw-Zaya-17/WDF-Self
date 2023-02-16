@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table CSS</title>
+    <style>
+
+        table {
+            width: 100%;
+            /* border: 2px solid black; */
+            border-collapse: collapse;
+        }
+
+        thead {
+
+        }
+
+        tbody {
+            
+            
+            
+        }
+
+        tr:nth-child(odd){
+
+            background-color: rgb(200, 203, 204);
+
+        }
+
+        tr {
+
+            background-color: rgb(62, 66, 68);
+
+        }
+        tr:hover {
+            opacity: 0.9;
+        }
+
+        th {
+            padding: 15px 20px;
+            border: 2px solid whitesmoke;
+            background-color: skyblue;
+        }
+
+        td {
+            padding: 15px 20px;
+            border: 2px solid whitesmoke;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Job</th>
+        </tr>
+     </thead>
+     <tbody>
+        <tr>
+            <td>1.</td>
+            <td>Mr. Kyaw Zayar Tun</td>
+            <td>Developer</td>
+            <td>09409915504</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Ms. Su Lay Khin</td>
+            <td>Enginer</td>
+            <td>09883811143</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Ms. Jennie</td>
+            <td rowspan="2">Developer</td>
+            <td>0943834123</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Mr. Kyaw Zayar Tun</td>
+            <td>09409915504</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>Ms. Su Lay Khin</td>
+            <td>Enginer</td>
+            <td>09883811143</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Ms. Jennie</td>
+            <td>Developer</td>
+            <td>0943834123</td>
+        </tr>
+        <tr>
+            <td colspan="3">Total</td>
+            <td>6 Staffs</td>
+        </tr>
+     </tbody>
+    </table>
+</body>
+</html>

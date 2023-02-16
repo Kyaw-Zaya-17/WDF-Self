@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&display=swap');
+
+:root {
+    --normal-h : 50px;
+    /* ဒါကထပ်ခါထပ်ခါသုံးရမယ့်အရာတွေကိုဘုံထုတ်တာ */
+    --normal-fs : 13px;
+}
+
+body {
+    background-color: #777373;
+}
+
+.mb {
+    margin: 5px;
+}
+
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    height: var(--normal-h);
+    color: whitesmoke;
+    font-family: 'Playfair Display', serif;
+    font-size: var(--normal-fs);
+    padding: 0 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: var(--normal-h);
+}
+/* buttonမှာ width ပေးလို့ မရဘူး heightတော့ပေးလို့ရတယ်  */
+
+.btn-light {
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-dark {
+    background-color: #000000;
+    border: 2px solid #000000;
+}
+
+.btn-primary {
+    background-color: #cfbaf0;
+    border: 2px solid #cfbaf0;
+}
+
+.btn-secondary {
+    background-color: #f1c0e8;
+    border: 2px solid #f1c0e8;
+}
+
+.btn-accent {
+    background-color: #8eecf5;
+    border: 2px solid #8eecf5;
+}
+
+.btn-outline {
+    display: inline-block;
+    box-sizing: border-box;
+    height: var(--normal-h);
+    color: #000000;
+    background-color: transparent;
+    border: 2px solid #000000;
+    font-family: 'Playfair Display', serif;
+    font-size: var(--normal-fs);
+    padding: 0 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: var(--normal-h);
+}
+
+.btn-outline-light {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-outline-dark {
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+.btn-outline-primary {
+    color: #cfbaf0;
+    border: 2px solid #cfbaf0;
+}
+
+.btn-outline-secondary {
+    color: #f1c0e8;
+    border: 2px solid #f1c0e8;
+}
+
+.btn-outline-accent {
+    color: #8eecf5;
+    border: 2px solid #8eecf5;
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+.rounded-pill {
+    border-radius: 25px;
+}
+
+.btn-icon {
+    width: 50px;
+    padding: 0;
+    text-align: center;
+}
